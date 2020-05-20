@@ -3,7 +3,7 @@ entries:
   awx:
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2020-05-18T14:07:12.020961+02:00"
+    created: "2020-05-20T23:20:00.457405+02:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -19,7 +19,7 @@ entries:
       version: 4.2.17
     description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq,
       postgresql, memcahed)
-    digest: d7b6b951f08b0a323de96b0c9d8b724addf5930155b83f295b33beee82f35bd9
+    digest: e50490d3cc358290f39b036e3299c7f3f19443a8ad5593245094cc44cc7423ad
     icon: http://www.test.png
     keywords:
     - ansible
@@ -35,7 +35,7 @@ entries:
     version: 0.7.2
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2020-05-18T14:07:12.015086+02:00"
+    created: "2020-05-20T23:20:00.451144+02:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -66,7 +66,7 @@ entries:
     version: 0.7.1
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2020-05-18T14:07:12.006816+02:00"
+    created: "2020-05-20T23:20:00.442033+02:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -97,7 +97,7 @@ entries:
     version: 0.7.0
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2020-05-18T14:07:11.980302+02:00"
+    created: "2020-05-20T23:20:00.433075+02:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -128,7 +128,7 @@ entries:
     version: 0.6.0
   vault:
   - apiVersion: v2
-    created: "2020-05-18T14:07:12.026095+02:00"
+    created: "2020-05-20T23:20:00.460777+02:00"
     description: Install and configure Vault on Kubernetes.
     digest: 509b51520948678bd7439a23743492fa2ad67250f37926c8e4d8541a68ad010c
     home: https://www.vaultproject.io
@@ -141,4 +141,4 @@ entries:
     urls:
     - vault-0.5.0.tgz
     version: 0.5.0
-generated: "2020-05-18T14:07:11.909709+02:00"
+generated: "2020-05-20T23:20:00.417927+02:00"
