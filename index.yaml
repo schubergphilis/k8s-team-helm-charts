@@ -3,7 +3,7 @@ entries:
   awx:
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2020-05-20T23:20:00.457405+02:00"
+    created: "2020-09-09T15:40:58.781289+02:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -35,7 +35,7 @@ entries:
     version: 0.7.2
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2020-05-20T23:20:00.451144+02:00"
+    created: "2020-09-09T15:40:58.772188+02:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -66,7 +66,7 @@ entries:
     version: 0.7.1
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2020-05-20T23:20:00.442033+02:00"
+    created: "2020-09-09T15:40:58.763602+02:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -97,7 +97,7 @@ entries:
     version: 0.7.0
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2020-05-20T23:20:00.433075+02:00"
+    created: "2020-09-09T15:40:58.742178+02:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -126,9 +126,48 @@ entries:
     urls:
     - awx-0.6.0.tgz
     version: 0.6.0
+  falco:
+  - apiVersion: v1
+    appVersion: 0.21.0
+    created: "2020-09-09T15:40:58.794356+02:00"
+    description: Falco
+    digest: 742df2fb4e1df14318e3218439bcb7e27ac416a4756e29bf87386dfa305c0a29
+    home: https://falco.org
+    icon: https://falco.org/images/logos/falco-logo.png
+    keywords:
+    - monitoring
+    - security
+    - alerting
+    - metric
+    - troubleshooting
+    - run-time
+    maintainers:
+    - email: nestor.salceda@sysdig.com
+      name: nestorsalceda
+    name: falco
+    sources:
+    - https://github.com/falcosecurity/falco
+    urls:
+    - falco-1.1.7.tgz
+    version: 1.1.7
+  istio-operator:
+  - apiVersion: v1
+    created: "2020-09-09T15:40:58.795037+02:00"
+    description: Helm chart for deploying Istio operator
+    digest: 809942396eec10646cfd73f3f37b4f0a846cc66eb53a109784015b69ecc35ed0
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - operator
+    name: istio-operator
+    sources:
+    - https://github.com/istio/istio/tree/master/operator
+    urls:
+    - istio-operator-1.7.0.tgz
+    version: 1.7.0
   vault:
   - apiVersion: v2
-    created: "2020-05-20T23:20:00.460777+02:00"
+    created: "2020-09-09T15:40:58.798828+02:00"
     description: Install and configure Vault on Kubernetes.
     digest: 509b51520948678bd7439a23743492fa2ad67250f37926c8e4d8541a68ad010c
     home: https://www.vaultproject.io
@@ -141,4 +180,4 @@ entries:
     urls:
     - vault-0.5.0.tgz
     version: 0.5.0
-generated: "2020-05-20T23:20:00.417927+02:00"
+generated: "2020-09-09T15:40:58.706109+02:00"
