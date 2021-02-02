@@ -3,7 +3,7 @@ entries:
   awx:
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2021-02-02T13:17:18.67074+01:00"
+    created: "2021-02-02T13:33:31.228819+01:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -35,7 +35,7 @@ entries:
     version: 0.7.2
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2021-02-02T13:17:18.665772+01:00"
+    created: "2021-02-02T13:33:31.223807+01:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -66,7 +66,7 @@ entries:
     version: 0.7.1
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2021-02-02T13:17:18.657205+01:00"
+    created: "2021-02-02T13:33:31.216526+01:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -97,7 +97,7 @@ entries:
     version: 0.7.0
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2021-02-02T13:17:18.651902+01:00"
+    created: "2021-02-02T13:33:31.209427+01:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -129,7 +129,7 @@ entries:
   falco:
   - apiVersion: v1
     appVersion: 0.21.0
-    created: "2021-02-02T13:17:18.673778+01:00"
+    created: "2021-02-02T13:33:31.231669+01:00"
     description: Falco
     digest: 742df2fb4e1df14318e3218439bcb7e27ac416a4756e29bf87386dfa305c0a29
     home: https://falco.org
@@ -152,7 +152,7 @@ entries:
     version: 1.1.7
   istio-operator:
   - apiVersion: v1
-    created: "2021-02-02T13:17:18.674276+01:00"
+    created: "2021-02-02T13:33:31.232344+01:00"
     description: Helm chart for deploying Istio operator
     digest: 809942396eec10646cfd73f3f37b4f0a846cc66eb53a109784015b69ecc35ed0
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -168,7 +168,7 @@ entries:
   kube-monkey:
   - apiVersion: v1
     appVersion: 0.3.0
-    created: "2021-02-02T13:17:18.675319+01:00"
+    created: "2021-02-02T13:33:31.233464+01:00"
     description: A Helm chart for Kubernetes
     digest: d041d8b9a0f3b2ea66a68e5483453c250ecc4aabfb43db0ed72d1271e758eeb4
     name: kube-monkey
@@ -178,11 +178,11 @@ entries:
   opa:
   - apiVersion: v1
     appVersion: 0.26.0
-    created: "2021-02-02T13:17:18.680235+01:00"
+    created: "2021-02-02T13:33:31.239169+01:00"
     description: WARNING - This helm chart has been modified to allows more features.
       Open source, general-purpose policy engine. Enforce fine-grained invariants
       over arbitrary Kubernetes resources.
-    digest: c4ada366538297d689e9f7427dcfa4ce0a6e9101ab6ab12ae67507887d870716
+    digest: 7e387acdb9c4391e8c42fd91ebf708308821d09c7b0e36998f8c93b25f6013b5
     home: https://www.openpolicyagent.org
     icon: https://raw.githubusercontent.com/open-policy-agent/opa/master/logo/logo.png
     keywords:
@@ -197,7 +197,7 @@ entries:
     version: 1.15.1
   - apiVersion: v1
     appVersion: 0.25.2
-    created: "2021-02-02T13:17:18.679058+01:00"
+    created: "2021-02-02T13:33:31.238045+01:00"
     description: WARNING - This helm chart has been modified to allows more features.
       Open source, general-purpose policy engine. Enforce fine-grained invariants
       over arbitrary Kubernetes resources.
@@ -216,7 +216,7 @@ entries:
     version: 1.15.0
   - apiVersion: v1
     appVersion: 0.15.1
-    created: "2021-02-02T13:17:18.677269+01:00"
+    created: "2021-02-02T13:33:31.235997+01:00"
     deprecated: true
     description: DEPRECATED - Open source, general-purpose policy engine. Enforce
       fine-grained invariants over arbitrary Kubernetes resources.
@@ -235,7 +235,7 @@ entries:
     version: 1.14.6
   vault:
   - apiVersion: v2
-    created: "2021-02-02T13:17:18.682618+01:00"
+    created: "2021-02-02T13:33:31.24167+01:00"
     description: Install and configure Vault on Kubernetes.
     digest: 509b51520948678bd7439a23743492fa2ad67250f37926c8e4d8541a68ad010c
     home: https://www.vaultproject.io
@@ -248,4 +248,4 @@ entries:
     urls:
     - vault-0.5.0.tgz
     version: 0.5.0
-generated: "2021-02-02T13:17:18.645321+01:00"
+generated: "2021-02-02T13:33:31.199253+01:00"
