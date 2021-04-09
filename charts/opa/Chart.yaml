@@ -1,0 +1,13 @@
+apiVersion: v1
+appVersion: 0.26.0
+description: WARNING - This helm chart has been modified to allows more features. Open source, general-purpose policy engine. Enforce fine-grained invariants over arbitrary Kubernetes resources.
+home: https://www.openpolicyagent.org
+icon: https://raw.githubusercontent.com/open-policy-agent/opa/master/logo/logo.png
+keywords:
+- opa
+- admission control
+- policy
+name: opa
+sources:
+- https://github.com/open-policy-agent/opa
+version: 1.16.2
