@@ -56,6 +56,14 @@ deployment:
 service:
   internalPort: 8052
   externalPort: 8052
+  liveness:
+    delaySeconds: 0
+    periodSeconds: 10
+    timeoutSeconds: 1
+  readiness:
+    delaySeconds: 0
+    periodSeconds: 10
+    timeoutSeconds: 1
 
 ingress:
   enabled: false
