@@ -3,7 +3,7 @@ entries:
   awx:
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2021-07-01T14:54:12.456753+02:00"
+    created: "2022-01-03T11:47:24.742912+01:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -17,7 +17,8 @@ entries:
       name: memcached
       repository: https://charts.bitnami.com/bitnami
       version: 4.2.17
-    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq, postgresql, memcached)
+    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq,
+      postgresql, memcached)
     digest: 4276b4e4d3406a8c3c6fa8f5eaf88e7bc3780f5044da411fa958ebf38528985d
     icon: http://www.test.png
     keywords:
@@ -34,7 +35,7 @@ entries:
     version: 0.8.0
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2021-07-01T14:54:12.452766+02:00"
+    created: "2022-01-03T11:47:24.738587+01:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -48,7 +49,8 @@ entries:
       name: memcached
       repository: https://charts.bitnami.com/bitnami
       version: 4.2.17
-    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq, postgresql, memcached)
+    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq,
+      postgresql, memcached)
     digest: 87af6bf4d4ff0a8e82a6ec1faad3d0928deef19ba0b97c81c746795fddee5ee2
     icon: http://www.test.png
     keywords:
@@ -65,7 +67,7 @@ entries:
     version: 0.7.4
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2021-07-01T14:54:12.448729+02:00"
+    created: "2022-01-03T11:47:24.733609+01:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -79,7 +81,8 @@ entries:
       name: memcached
       repository: https://charts.bitnami.com/bitnami
       version: 4.2.17
-    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq, postgresql, memcached)
+    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq,
+      postgresql, memcached)
     digest: f7e522874af95288f61bd3f5bd5d7ce38da68358185838aa1999b232a41aafe5
     icon: http://www.test.png
     keywords:
@@ -96,7 +99,7 @@ entries:
     version: 0.7.3
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2021-07-01T14:54:12.444807+02:00"
+    created: "2022-01-03T11:47:24.728105+01:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -110,7 +113,8 @@ entries:
       name: memcached
       repository: https://charts.bitnami.com/bitnami
       version: 4.2.17
-    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq, postgresql, memcahed)
+    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq,
+      postgresql, memcahed)
     digest: e50490d3cc358290f39b036e3299c7f3f19443a8ad5593245094cc44cc7423ad
     icon: http://www.test.png
     keywords:
@@ -127,7 +131,7 @@ entries:
     version: 0.7.2
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2021-07-01T14:54:12.440831+02:00"
+    created: "2022-01-03T11:47:24.723002+01:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -141,7 +145,8 @@ entries:
       name: memcached
       repository: https://charts.bitnami.com/bitnami
       version: 4.2.17
-    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq, postgresql, memcahed)
+    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq,
+      postgresql, memcahed)
     digest: e602b539b84d22d2863ac983d89914ce65b99427ac1587c39186210b9b6736ae
     keywords:
     - ansible
@@ -157,7 +162,7 @@ entries:
     version: 0.7.1
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2021-07-01T14:54:12.437226+02:00"
+    created: "2022-01-03T11:47:24.717181+01:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -171,7 +176,8 @@ entries:
       name: memcached
       repository: https://charts.bitnami.com/bitnami
       version: 4.2.17
-    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq, postgresql, memcahed)
+    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq,
+      postgresql, memcahed)
     digest: a4fbfdb591d53c3594528435ee16e44c07d3466c67d9edb80958612a4fd1390f
     keywords:
     - ansible
@@ -187,7 +193,7 @@ entries:
     version: 0.7.0
   - apiVersion: v1
     appVersion: 6.1.0
-    created: "2021-07-01T14:54:12.432273+02:00"
+    created: "2022-01-03T11:47:24.711515+01:00"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -201,7 +207,8 @@ entries:
       name: memcached
       repository: https://kubernetes-charts.storage.googleapis.com/
       version: 2.9.0
-    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq, postgresql, memcahed)
+    description: Installs Ansible AWX (Ansible Web UI), with dependencies (rabbitmq,
+      postgresql, memcahed)
     digest: b04a1e9d6b67914a740473aab612b112cb59eb5ad4ce43e73d0256ce6c29f7be
     keywords:
     - ansible
@@ -218,7 +225,7 @@ entries:
   falco:
   - apiVersion: v1
     appVersion: 0.21.0
-    created: "2021-07-01T14:54:12.458848+02:00"
+    created: "2022-01-03T11:47:24.745123+01:00"
     description: Falco
     digest: 742df2fb4e1df14318e3218439bcb7e27ac416a4756e29bf87386dfa305c0a29
     home: https://falco.org
@@ -241,7 +248,7 @@ entries:
     version: 1.1.7
   istio-operator:
   - apiVersion: v1
-    created: "2021-07-01T14:54:12.459386+02:00"
+    created: "2022-01-03T11:47:24.745545+01:00"
     description: Helm chart for deploying Istio operator
     digest: 809942396eec10646cfd73f3f37b4f0a846cc66eb53a109784015b69ecc35ed0
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -257,7 +264,7 @@ entries:
   kube-monkey:
   - apiVersion: v1
     appVersion: 0.3.0
-    created: "2021-07-01T14:54:12.460019+02:00"
+    created: "2022-01-03T11:47:24.746295+01:00"
     description: A Helm chart for Kubernetes
     digest: d041d8b9a0f3b2ea66a68e5483453c250ecc4aabfb43db0ed72d1271e758eeb4
     name: kube-monkey
@@ -266,9 +273,31 @@ entries:
     version: 1.3.0
   opa:
   - apiVersion: v1
+    appVersion: 0.32.0
+    created: "2022-01-03T11:47:24.754905+01:00"
+    description: WARNING - This helm chart has been modified to allow more features,
+      specifically to include opahelper. Open source, general-purpose policy engine.
+      Enforce fine-grained invariants over arbitrary Kubernetes resources.
+    digest: 8cfeebd68c640f9b25027d67bdc0a7a4db60cd9094d5177f1ca728fd869cc63b
+    home: https://www.openpolicyagent.org
+    icon: https://raw.githubusercontent.com/open-policy-agent/opa/master/logo/logo.png
+    keywords:
+    - opa
+    - admission control
+    - policy
+    name: opa
+    sources:
+    - https://github.com/open-policy-agent/opa
+    - https://github.com/open-policy-agent/kube-mgmt
+    urls:
+    - opa-2.0.0.tgz
+    version: 2.0.0
+  - apiVersion: v1
     appVersion: 0.26.0
-    created: "2021-07-01T14:54:12.467571+02:00"
-    description: WARNING - This helm chart has been modified to allows more features. Open source, general-purpose policy engine. Enforce fine-grained invariants over arbitrary Kubernetes resources.
+    created: "2022-01-03T11:47:24.754024+01:00"
+    description: WARNING - This helm chart has been modified to allows more features.
+      Open source, general-purpose policy engine. Enforce fine-grained invariants
+      over arbitrary Kubernetes resources.
     digest: 80a6e8f34c64a45c020826b2edf1f484f7c9a6e6ab228af5d6616fa64ec3e2bc
     home: https://www.openpolicyagent.org
     icon: https://raw.githubusercontent.com/open-policy-agent/opa/master/logo/logo.png
@@ -284,8 +313,10 @@ entries:
     version: 1.16.3
   - apiVersion: v1
     appVersion: 0.26.0
-    created: "2021-07-01T14:54:12.466816+02:00"
-    description: WARNING - This helm chart has been modified to allows more features. Open source, general-purpose policy engine. Enforce fine-grained invariants over arbitrary Kubernetes resources.
+    created: "2022-01-03T11:47:24.753021+01:00"
+    description: WARNING - This helm chart has been modified to allows more features.
+      Open source, general-purpose policy engine. Enforce fine-grained invariants
+      over arbitrary Kubernetes resources.
     digest: bbfcadfc930d99bf775d56802f424eb13c69007de93cf373d109b372b7330841
     home: https://www.openpolicyagent.org
     icon: https://raw.githubusercontent.com/open-policy-agent/opa/master/logo/logo.png
@@ -301,8 +332,10 @@ entries:
     version: 1.16.2
   - apiVersion: v1
     appVersion: 0.26.0
-    created: "2021-07-01T14:54:12.46607+02:00"
-    description: WARNING - This helm chart has been modified to allows more features. Open source, general-purpose policy engine. Enforce fine-grained invariants over arbitrary Kubernetes resources.
+    created: "2022-01-03T11:47:24.751956+01:00"
+    description: WARNING - This helm chart has been modified to allows more features.
+      Open source, general-purpose policy engine. Enforce fine-grained invariants
+      over arbitrary Kubernetes resources.
     digest: 52daf690ffaaa755e90b659c4ac1f1b28594f5809303432f6122e793a10677c0
     home: https://www.openpolicyagent.org
     icon: https://raw.githubusercontent.com/open-policy-agent/opa/master/logo/logo.png
@@ -318,8 +351,10 @@ entries:
     version: 1.16.1
   - apiVersion: v1
     appVersion: 0.26.0
-    created: "2021-07-01T14:54:12.465159+02:00"
-    description: WARNING - This helm chart has been modified to allows more features. Open source, general-purpose policy engine. Enforce fine-grained invariants over arbitrary Kubernetes resources.
+    created: "2022-01-03T11:47:24.751004+01:00"
+    description: WARNING - This helm chart has been modified to allows more features.
+      Open source, general-purpose policy engine. Enforce fine-grained invariants
+      over arbitrary Kubernetes resources.
     digest: 6d58f8aeb8467bf8a80a6d320e02227ea3149226d301dd7602242f9998e9f323
     home: https://www.openpolicyagent.org
     icon: https://raw.githubusercontent.com/open-policy-agent/opa/master/logo/logo.png
@@ -335,8 +370,10 @@ entries:
     version: 1.16.0
   - apiVersion: v1
     appVersion: 0.26.0
-    created: "2021-07-01T14:54:12.464283+02:00"
-    description: WARNING - This helm chart has been modified to allows more features. Open source, general-purpose policy engine. Enforce fine-grained invariants over arbitrary Kubernetes resources.
+    created: "2022-01-03T11:47:24.750167+01:00"
+    description: WARNING - This helm chart has been modified to allows more features.
+      Open source, general-purpose policy engine. Enforce fine-grained invariants
+      over arbitrary Kubernetes resources.
     digest: c3755bf7df11239d96b1a2af29334d87da88c77c4db4e02ce0b07ef43fc253b6
     home: https://www.openpolicyagent.org
     icon: https://raw.githubusercontent.com/open-policy-agent/opa/master/logo/logo.png
@@ -352,8 +389,10 @@ entries:
     version: 1.15.2
   - apiVersion: v1
     appVersion: 0.26.0
-    created: "2021-07-01T14:54:12.463358+02:00"
-    description: WARNING - This helm chart has been modified to allows more features. Open source, general-purpose policy engine. Enforce fine-grained invariants over arbitrary Kubernetes resources.
+    created: "2022-01-03T11:47:24.749209+01:00"
+    description: WARNING - This helm chart has been modified to allows more features.
+      Open source, general-purpose policy engine. Enforce fine-grained invariants
+      over arbitrary Kubernetes resources.
     digest: 7e387acdb9c4391e8c42fd91ebf708308821d09c7b0e36998f8c93b25f6013b5
     home: https://www.openpolicyagent.org
     icon: https://raw.githubusercontent.com/open-policy-agent/opa/master/logo/logo.png
@@ -369,8 +408,10 @@ entries:
     version: 1.15.1
   - apiVersion: v1
     appVersion: 0.25.2
-    created: "2021-07-01T14:54:12.462442+02:00"
-    description: WARNING - This helm chart has been modified to allows more features. Open source, general-purpose policy engine. Enforce fine-grained invariants over arbitrary Kubernetes resources.
+    created: "2022-01-03T11:47:24.748266+01:00"
+    description: WARNING - This helm chart has been modified to allows more features.
+      Open source, general-purpose policy engine. Enforce fine-grained invariants
+      over arbitrary Kubernetes resources.
     digest: bbe408d0b7721c17dc79ceac8be03268e70a83f2594e1365d0eddabf6c1dab98
     home: https://www.openpolicyagent.org
     icon: https://raw.githubusercontent.com/open-policy-agent/opa/master/logo/logo.png
@@ -386,9 +427,10 @@ entries:
     version: 1.15.0
   - apiVersion: v1
     appVersion: 0.15.1
-    created: "2021-07-01T14:54:12.460888+02:00"
+    created: "2022-01-03T11:47:24.74748+01:00"
     deprecated: true
-    description: DEPRECATED - Open source, general-purpose policy engine. Enforce fine-grained invariants over arbitrary Kubernetes resources.
+    description: DEPRECATED - Open source, general-purpose policy engine. Enforce
+      fine-grained invariants over arbitrary Kubernetes resources.
     digest: e7a0733da6a3a553d571506cc86610d26f285dd615eb2f17b4751008f9d807a5
     home: https://www.openpolicyagent.org
     icon: https://raw.githubusercontent.com/open-policy-agent/opa/master/logo/logo.png
@@ -404,7 +446,7 @@ entries:
     version: 1.14.6
   vault:
   - apiVersion: v2
-    created: "2021-07-01T14:54:12.469193+02:00"
+    created: "2022-01-03T11:47:24.756599+01:00"
     description: Install and configure Vault on Kubernetes.
     digest: 509b51520948678bd7439a23743492fa2ad67250f37926c8e4d8541a68ad010c
     home: https://www.vaultproject.io
@@ -417,4 +459,4 @@ entries:
     urls:
     - vault-0.5.0.tgz
     version: 0.5.0
-generated: "2021-07-01T14:54:12.427996+02:00"
+generated: "2022-01-03T11:47:24.705055+01:00"
