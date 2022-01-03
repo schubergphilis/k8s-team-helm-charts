@@ -1,16 +1,7 @@
-# ⚠️ Repo Archive Notice
-
-As of Nov 13, 2020, charts in this repo will no longer be updated.
-For more information, see the Helm Charts [Deprecation and Archive Notice](https://github.com/helm/charts#%EF%B8%8F-deprecation-and-archive-notice), and [Update](https://helm.sh/blog/charts-repo-deprecation/).
-
 # OPA
 
-[OPA](https://www.openpolicyagent.org) is an open source general-purpose policy
+[OPA](https://www.openpolicyagent.org) is an open-source general-purpose policy
 engine designed for cloud-native environments.
-
-## DEPRECATION NOTICE
-
-This chart is deprecated and no longer supported.
 
 ## Prerequisites
 
@@ -31,7 +22,9 @@ If you just want to see something run, install the chart without any
 configuration.
 
 ```bash
-helm install stable/opa
+helm repo add opa https://open-policy-agent.github.io/kube-mgmt/charts
+helm repo update
+helm upgrade -i -n opa --create-namespace opa opa/opa
 ```
 
 Once installed, the OPA will download a sample bundle from
@@ -67,14 +60,17 @@ Reference](https://www.openpolicyagent.org/docs/configuration.html).
 | Parameter | Description | Default |
 | --- | --- | --- |
 | `certManager.enabled` | Setup the Webhook using cert-manager | `false` |
-| `admissionControllerKind` | Type of admission controller to install. | `ValidatingWebhookConfiguration` |
-| `admissionControllerFailurePolicy` | Fail-open (`Ignore`) or fail-closed (`Fail`)? | `Ignore` |
-| `admissionControllerRules` | Types of operations resources to check. | `*` |
-| `admissionControllerNamespaceSelector` | Namespace selector for the admission controller | See [values.yaml](values.yaml) |
-| `generateAdmissionControllerCerts` | Auto-generate TLS certificates for admission controller. | `true` |
-| `admissionControllerCA` | Manually set admission controller certificate CA. | Unset |
-| `admissionControllerCert` | Manually set admission controller certificate. | Unset |
-| `admissionControllerKey` | Manually set admission controller key. | Unset |
+| `certManager.rootCACertificateDuration` | Duration of the Webhook's root CA | `43800h` (5y) |
+| `certManager.servingCertificateDuration` | Duration of the Webhook's serving certificate | `8760h` (1y) |
+| `admissionController.enabled` | | `true` |
+| `admissionController.kind` | Type of admission controller to install. | `ValidatingWebhookConfiguration` |
+| `admissionController.failurePolicy` | Fail-open (`Ignore`) or fail-closed (`Fail`)? | `Ignore` |
+| `admissionController.rules` | Types of operations resources to check. | `*` |
+| `admissionController.namespaceSelector` | Namespace selector for the admission controller | See [values.yaml](values.yaml) |
+| `generateCerts` | Auto-generate TLS certificates. | `true` |
+| `CA` | Manually set TLS CA. | Unset |
+| `cert` | Manually set TLS certificate. | Unset |
+| `key` | Manually set TLS key. | Unset |
 | `podDisruptionBudget.enabled` | Enables creation of a PodDisruptionBudget for OPA. | `false` |
 | `podDisruptionBudget.minAvailable` | Sets the minimum number of pods to be available. Cannot be set at the same time as maxUnavailable. | `1` |
 | `podDisruptionBudget.maxUnavailable` | Sets the maximum number of pods to be unavailable. Cannot be set at the same time as minAvailable. | Unset |
@@ -94,6 +90,7 @@ Reference](https://www.openpolicyagent.org/docs/configuration.html).
 | `opa` | OPA configuration. | See [values.yaml](values.yaml) |
 | `mgmt` | kube-mgmt configuration. | See [values.yaml](values.yaml) |
 | `mgmt.port` | kube-mgmt/prometheus port used to communicate with opa. | See [values.yaml](values.yaml) |
+| `mgmt.extraEnv` | Additional environment variables to be added to the kube-mgmt container | `[]` |
 | `sar.resources` | CPU and memory limits for the sar container. | `{}` |
 | `priorityClassName` | The name of the priorityClass for the pods. | Unset |
 | `prometheus.enabled` | Flag to expose the `/metrics` endpoint to be scraped. | `false` |
@@ -106,6 +103,7 @@ Reference](https://www.openpolicyagent.org/docs/configuration.html).
 | `securityContext` | Security context for the containers | `{enabled: false, runAsNonRoot: true, runAsUser: 1}` |
 | `deploymentStrategy` | Specify deployment spec rollout strategy | `{}` |
 | `extraArgs` | Additional arguments to be added to the opa container | `[]` |
+| `extraEnv` | Additional environment variables to be added to the opa container | `[]` |
 | `extraContainers` | Additional containers to be added to the deployment | `[]` |
 | `extraVolumes` | Additional volumes to be added to the deployment | `[]` |
 | `extraPorts` | Additional ports to OPA service. Useful to expose `extraContainer` ports. | `[]` |

@@ -83,13 +83,22 @@ Detect the version of cert manager crd that is installed
 Error if CRD is not available
 */}}
 {{- define "opa.certManagerApiVersion" -}}
-{{- if (.Capabilities.APIVersions.Has "cert-manager.io/v1alpha3") -}}
-cert-manager.io/v1alpha3
-{{- else if (.Capabilities.APIVersions.Has "cert-manager.io/v1alpha2") -}}
-cert-manager.io/v1alpha2
-{{- else if (.Capabilities.APIVersions.Has "certmanager.k8s.io/v1alpha1") -}}
-certmanager.k8s.io/v1alpha1
+{{- if (.Capabilities.APIVersions.Has "cert-manager.io/v1") -}}
+cert-manager.io/v1
+{{- else if (.Capabilities.APIVersions.Has "cert-manager.io/v1beta1") -}}
+cert-manager.io/v1beta1
 {{- else  -}}
 {{- fail "cert-manager CRD does not appear to be installed" }}
+{{- end -}}
+{{- end -}}
+
+{{/*
+Detect the available version of admissionregistration
+*/}}
+{{- define "opa.admissionregistrationApiVersion" -}}
+{{- if (.Capabilities.APIVersions.Has "admissionregistration.k8s.io/v1") -}}
+admissionregistration.k8s.io/v1
+{{- else  -}}
+admissionregistration.k8s.io/v1beta1
 {{- end -}}
 {{- end -}}
